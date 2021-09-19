@@ -360,3 +360,15 @@ a {
     font-size: 1.7rem;
   }
 }
+.media {
+  display: flex;
+}
+.media__image {
+  margin-top: 2rem;
+}
+.medio__body {
+  margin: 0px 2rem;
+}
+.medio__title {
+  margin-top: 0px;
+}
