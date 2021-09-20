@@ -163,9 +163,16 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
 
 .icon--primary {
   fill: var(--color-primary);
+}
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -176,6 +183,9 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+.icon-container--accent {
+  background-color: var(--color-accent);
 }
 /* Buttons */
 .btn {
@@ -410,4 +420,40 @@ a {
   .quote__organizarion {
     font-size: 1.6rem;
   }
+}
+
+.grid {
+  display: grid;
+}
+.grid--1x2 {
+  grid-template-rows: 1fr;
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.testimonail__image {
+  position: relative;
+}
+.testimonail__image > img {
+  width: 100%;
+}
+.testimonail {
+  padding: 3rem;
+  overflow: visible;
+}
+.testimonail__image > .icon-container {
+  position: absolute;
+  top: 25px;
+  right: -32px;
+}
+@media screen and (min-width: 768px) {
+  .testimonail .quote,
+  .testimonail .quote__author {
+    font-size: 2.4rem;
+  }
+}
+.testimonail .quote {
+  margin-left: 6rem;
 }
