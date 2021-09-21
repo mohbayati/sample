@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body style="margin: 40px;">
-    <div class="card testimonail">
-      <div class="grid grid--1x2">
-        <div class="testimonail__image">
-          <img src="/images/testimonial.jpg" alt="">
-          <span class="icon-container icon-container--accent">
-            <svg class="icon--small icon--white ">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque voluptas officia voluptatum alias nesciunt quo est quaerat non velit.</p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="medio__body">
-                <h3 class="medio__title quote__author">John Smith</h3>
-                <p class="quote__organizarion">ABC Company</p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body style="margin: 40px;">
+
+  <div class="collapsible collapsible--expanded">
+    <header class="collapsible__header" >
+      <h2 class="collapsible__heading">Company</h2>
+      <svg class="icon icon--white collapsible__chevron">
+        <use xlink:href="images/sprite.svg#chevron"></use>
+      </svg>
+    </header>
+  
+  <div class="collapsible__content">
+    <ul>
+      <li>
+        About
+      </li>
+      <li>
+        Affiliates
+      </li>
+      <li>
+        Migrations
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/js/main.js"></script>
+</body>
+
 </html>
